@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plain T-Shirts Store</title>
+        <link rel="stylesheet" href="aunt.css">
+        <link rel="stylesheet" href="styles.css"> <!-- Example link to an external CSS file for styling -->
+        <script src="main.js"></script> <!-- Example script tag for an external JavaScript file for functionality -->
+        <script src="https://kit.fontawesome.com/44ca6ab647.js" crossorigin="anonymous"></script>
+        <style>
+            /* Example inline CSS for additional styling */
+            /* Add your CSS styles for header here */
+            header {
+                background-color: teal;
+                padding: 10px 45px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            /* Add your CSS styles for logo here */
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+                color: #333;
+                text-decoration: none;
+            }
+            
+            /* Add your CSS styles for navigation menu here */
+            .nav {
+                margin-top: 20px;
+            }
+            
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .nav li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            
+            .nav a {
+                text-decoration: none;
+                color: #333;
+                padding: 5px;
+            }
+            
+            .nav a:hover {
+                background-color: #333;
+                color: #fff;
+            }
+            
+        </style>
+    </head>
+    
+<body>
+    <header>
+        <div class="parallax">
+            <img src="sample.png"height="40px" width="auto" alt="Moving Picture 1" class="image1"> <!-- Replace with the path to your moving picture 1 -->
+            <div class="tk"><h2>BK T-SHIRT SHOPING CENTER</h2></div>
+        </div>
+        <div class="home">
+            <nav>
+                <ul class="header-menu">
+                   <li><a href="#Home">Home</a></li>
+                   <li><a href="#products">Products</a></li>
+                   <li><a href="#contact">Contact Us</a></li>
+                   <li><a href="#T-Shirts">T-Shirts</a></li>
+                   <li><a href="#About Us">About Us</a></li>
+
+                    <li class="contact-info"><a href="tel:0702232076"> <b>Phone: (256) 70223-2076</b></a></li> <!-- Added contact info -->
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </nav>
+        </div>
+        <div class="home">
+            <nav>
+                <ul class="header-menu">
+
+                    <li class="list list-cart"><a href="#Cart">Cart</a></li>
+                    <li class="list list-login"><a href="#Login">Login</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+       
+        <!-- Add any additional header content, such as a tagline -->
+
+    </header>
+   
+    <main>
+        <div class="heading">
+            
+             <!-- Your main content here, including the product-item section with t-shirt images -->
+            <section class="product-item">
+            <div class="slideshow-container">
+                <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/08/how-to-look-good-in-a-t-shirt-dress-code.jpg" alt="T-Shirt 1" class="slideshow-img active">
+                <img src="https://thumbs.dreamstime.com/b/blank-white-t-shirt-template-junior-front-side-back-view-baby-clothes-design-presentation-online-store-advertising-mockup-201144060.jpg" alt="T-Shirt 2" class="slideshow-img active">
+                <img src="https://dailynexus.s3.us-west-1.amazonaws.com/dailynexus/wp-content/uploads/2018/10/Screen-Shot-2018-10-17-at-11.15.05-PM-1536x1016.png" alt="T-Shirt 3" class="slideshow-img active">
+                <div class="slideshow-text">Welcome to our Plain T-Shirts Store</div>
+            </div>
+            </section>
+        </div>
+        <!-- Add your product listings with images, descriptions, and pricing -->
+        <!-- Search bar HTML code -->
+        <div class="search-container">
+            <form class="search-form" action="/search" method="get">
+            <input type="text" class="search-input" name="search" placeholder="Search for t-shirts...">
+            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+          </form> </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/69/ba/b8/69bab85dc1dad4f032ca6ce76e79e5fc.jpg"  alt="Plain T-Shirt 1">
+                <h2>Round Neck kandy</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 7,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <!-- Add more product listings as needed -->
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51PjnwP8k1L._AC_UL1250_.jpg" alt="Plain T-Shirt 2">
+                <h2>Round Neck Monza</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 8,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://media.dantty.com/imgs/uploads/Dantty_86011565_2022-04-28.jpg" alt="Plain T-Shirt 2">
+                <h2>Fine Spinner</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 12,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://i5.walmartimages.com/asr/70882846-3141-4419-806a-bf00396d5d1f.08310d48a7400fbaa1ce8095e1878fb7.jpeg" alt="Plain T-Shirt 2">
+                <h2>Color t-shirt</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 23,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+             </div>
+            <div class="product">
+                <img src="https://www.johncraig.co.za/wp-content/uploads/MUR39W-MURATTI-PLAIN-VNECK-TEE-WHITE-117058-V1.jpg" alt="Plain T-Shirt 2">
+                <h2>V-neck</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 9,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://i5.walmartimages.com/asr/265f742f-6e22-47c5-9ac8-6f78caa58ae6.2c4a9bdbd7eeb76793433af0cccfd2e1.jpeg" alt="Plain T-Shirt 2">
+                <h2>unisexual t-shirt</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 7,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://gokaktrends.com/wp-content/uploads/2020/11/3.jpg"alt="Plain T-Shirt 2">
+                <h2>Polo</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 15,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://www.gnbtshirt.com/images/products/img-plain-t-shirt.jpg" alt="Plain T-Shirt 2">
+                <h2>Now</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 6,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51UwqaLA6SL._AC_UY741_.jpg" alt="Plain T-Shirt 2">
+                <h2>Shutlle</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 13,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/LC/SA/MY-12359593/men-27s-plain-t-shirt-500x500.jpg"alt="Plain T-Shirt 2">
+                <h2>Lutex t-shirts</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 8,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://cdn-fnknc.nitrocdn.com/jwqHRGAzpUgGskUSHlppNQzwuXgXIKwg/assets/images/optimized/rev-dda8906/wp-content/uploads/2022/12/PoloRalphLauren_SlimFit_PocketTee.jpg" alt="Plain T-Shirt 2">
+                <h2>j. Crew Broken-in Pocket</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 8,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+            <div class="product">
+                <img src="https://www.soffe.com/prodimg/hires/685m-3TAN_010523100238.png" alt="Plain T-Shirt 2">
+                <h2>Gap classic t-shirts</h2>
+                <p>Description of the t-shirt.</p>
+                <p>Price: 17,000shs</p>
+                <form action="checkout.php" method="post">
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="XXL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="green">Purple</option>
+                        <option value="green">Orange</option>
+                        <option value="green">Yellow</option>
+                        <option value="green">White</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+
+
+    </main>
+    <footer>
+            <div class="footer-container">
+                <div class="footer-item">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@bkcapitalshoppers.com</p>
+                    <p>Phone: +256702232076</p>
+                    <p>Address: Mini-Price, Benedict kiwanuka rd, kampala, Uganda, Shop Bl5 24</p>
+                </div>
+                <div class="footer-item">
+                    <h4>Follow Us</h4>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/">Bk-facebook page<i class="fab fa-facebook-f"></i></a></li><br>
+                        <li><a href="https://twitter.com/login?lang=en"> Bk-twitter page<i class="fab fa-twitter"></i></a></li><br>
+                        <li><a href="https://www.instagram.com/"> Bk-instagram page<i class="fab fa-instagram"></i></a></li>
+                        <!-- Add more social media icons as needed -->
+                    </ul>
+                </div>
+            </div>
+        <div class="Con">
+            <p>&copy; 2023 Plain T-Shirts Store. All rights reserved.</p>
+        </div>
+        
+        <!-- Add any additional footer content, such as copyright notice or legal disclaimers -->
+    </footer>
+    <script>
+        // JavaScript code for slideshow functionality
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slideshow-img");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds (3000 milliseconds)
+        }
+    </script>
+    
+</body>
+</html>
